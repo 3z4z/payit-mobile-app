@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login to Payoo</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="bg-[#F4F5F7]">
+    <main class="login px-6 relative" id="main">
+        <div class="min-h-[100vh] flex flex-col justify-center items-center">
+            <div class="pt-8 pb-6 bg-[url(../assets/bg.png)] max-w-md w-full bg-no-repeat bg-top flex justify-center">
+                <img src="assets/Group.png" alt="">
+            </div>
+            <div class="card bg-base-100 shadow-sm w-full rounded-3xl max-w-md mx-auto">
+                <div class="card-body p-8">
+                    <form action="#">
+                        <fieldset class="fieldset">
+                            <legend class="fieldset-legend text-[1rem] font-medium">Mobile Number</legend>
+                            <input id="phone-no" type="text"
+                                class="input bg-[#F4F5F7] rounded-full px-5 py-4 border-0 w-full"
+                                placeholder="Enter your number" maxlength="11" />
+                        </fieldset>
+                        <fieldset class="fieldset">
+                            <legend class="fieldset-legend text-[1rem] font-medium">4 Digit Pin</legend>
+                            <input id="pin-no" type="password"
+                                class="input bg-[#F4F5F7] rounded-full px-5 py-4 border-0 w-full"
+                                placeholder="Enter 4 Digit Pin" maxlength="4" />
+                        </fieldset>
+                        <div class="card-actions grow mt-4">
+                            <button class="w-full btn bg-[#0874F2] hover:bg-[#0061cf] text-white font-bold rounded-full"
+                                id="btn-login">
+                                Login
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="scripts/main.js"></script>
+</body>
+
+</html>
